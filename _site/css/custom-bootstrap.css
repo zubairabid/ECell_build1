@@ -195,10 +195,10 @@ a:active {
   background-color: #3f3250;
   background-image: url("/assets/back/cover1.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  
   background-size: cover;
 
-  overflow: hidden;
+  
 }
 
 .coverlay {
@@ -627,3 +627,28 @@ pre {
   color: transparent !important;
 }
 /* end palette colours*/
+#banner {
+  position: fixed;
+  z-index: 996;
+  top: 4rem;
+  width: 100%;
+  padding: 0.5rem;
+  /* height: 2rem; */
+
+  transition: all 0.5s ease;
+
+  background-color: #e14658;
+  color: white;
+  text-align: center;
+}
+
+#banner a {
+  color: white;
+  /* font-style: italic; */
+  text-decoration: underline;
+  
+}
+
+#closeBanner:hover{
+  cursor: pointer;
+}
