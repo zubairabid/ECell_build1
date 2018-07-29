@@ -3,7 +3,15 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta charset="utf-8"> 
+	<meta charset="utf-8">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111097251-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-111097251-1');
+</script>
+
 	<!-- facebook Open Graph Metadatas -->
 <meta property="fb:app_id"       content="142981703176476" />
 <meta property="og:url" content="http://localhost:4000//" />
@@ -39,6 +47,10 @@
   <nav class="navbar navbar-expand-md navbar-dark fixed-top navy py-0">
 
     <a class="navbar-brand" href="/">
+      
+        
+      
+        
       
         
       
@@ -200,6 +212,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -208,6 +228,9 @@
     <div class="collapse navbar-collapse pt-3" id="navbarCollapse">
 
       <ul class="navbar-nav ml-auto">
+        <li class="nav-item" id="home">
+          <a class="nav-link" onclick="gotoHome()">Home</a>
+        </li>
         <li class="nav-item" id="blog" >
           <a class="nav-link" href="/blogs/">Blog</a>
         </li>
@@ -215,7 +238,7 @@
           <a class="nav-link" href="/about/">About Us</a>
         </li>
         <li class="nav-item dropdown show">
-          <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Initiatives</a>
+          <a class="nav-link dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Initiatives</a>
 
           <div class="dropdown-menu navy" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item white-text" href="http://megathon.tech">Megathon</a>
@@ -365,9 +388,28 @@ function typeWriter(text, i, fnCallback) {
 </div>
 
 
+<div>
+  <a href="javascript:" id="jump">
+    <i class="fa fa-chevron-up" id="jumpicon"></i>
+  </a>
+</div>
+
+
 <div id="portfolio" class="navy">
   <div class="port row">
     <div class="col-xs-12 col-sm-6 col-md-3 showcase p-0">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -529,11 +571,24 @@ function typeWriter(text, i, fnCallback) {
       
         
       
-      <div class="overlay-show black"></div>
-      <a href="http://megathon.tech/" class="overlay-text" target="_blank"><h4>Megathon</h4></a>
+      <a href="http://megathon.tech/" class="overlay-show black" target="_blank">
+        <h4>Megathon</h4>
+      </a>
     </div>
 
     <div class="col-xs-12 col-sm-6 col-md-3 showcase p-0">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -695,11 +750,24 @@ function typeWriter(text, i, fnCallback) {
       
         
       
-      <div class="overlay-show black"></div>
-      <a class="overlay-text" href="/talks/"><h4>Talks</h4></a>
+      <a class="overlay-show black" href="/talks/">
+        <h4>Talks</h4>
+      </a>
     </div>
 
     <div class="col-xs-12 col-sm-6 col-md-3 showcase p-0">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -861,11 +929,24 @@ function typeWriter(text, i, fnCallback) {
       
         
       
-      <div class="overlay-show black"></div>
-      <a class="overlay-text" href="/workshops/"><h4>Workshops</h4></a>
+      <a class="overlay-show black" href="/workshops/">
+        <h4>Workshops</h4>
+      </a>
     </div>
 
     <div class="col-xs-12 col-sm-6 col-md-3 showcase p-0">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -1027,11 +1108,24 @@ function typeWriter(text, i, fnCallback) {
       
         
       
-      <div class="overlay-show black"></div>
-      <a class="overlay-text" href="/hackathons/"><h4>Hackathons</h4></a>
+      <a class="overlay-show black" href="/hackathons/">
+        <h4>Hackathons</h4>
+      </a>
     </div>
 
     <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 showcase p-0">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -1340,6 +1434,18 @@ function typeWriter(text, i, fnCallback) {
         
       
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
         <img class="showcase-img" src="/assets/thumbs/talks.JPG" alt="talks">
         
       
@@ -1474,7 +1580,7 @@ function typeWriter(text, i, fnCallback) {
     	<h6>
         <b>
           <u>
-            <a href="/events/workshops/2018/05/19/summit.html" target="_blank">
+            <a href="/events/workshops/summit.html" target="_blank">
               Entrepreneurship Summit
             </a>
           </b>
@@ -1482,7 +1588,7 @@ function typeWriter(text, i, fnCallback) {
       </h6>
     	<p>19 May 2018<br>
     	<p>E-Cell IIIT Hyderabad is partnering with Entrepreneur India for the 15th annual Entrepreneur Start-up Summit, 2018 scheduled on May 19-20 2018 at HITEX Exhibition Centre, Hyderabad<br />
-This 2 day event will be packed with perspective building in <a href="/events/workshops/2018/05/19/summit.html" target="_blank">... [Read more]</a>
+This 2 day event will be packed with perspective building in <a href="/events/workshops/summit.html" target="_blank">... [Read more]</a>
       </p>
   	</div>
     <div class="col-md-4 col-sm-12 my-2 e-img-container">
@@ -1497,14 +1603,14 @@ This 2 day event will be packed with perspective building in <a href="/events/wo
     	<h6>
         <b>
           <u>
-            <a href="/blogs/events/hackathons/megathon" target="_blank">
+            <a href="/events/hackathons/megathon.html" target="_blank">
               Megathon
             </a>
           </b>
         </u>
       </h6>
     	<p>23 Sep 2017<br>
-    	<p>Hosted jointly by E-Cell IIT-Hyderabad and E-Cell IIIT-Hyderabad, Megathon is a 24-hour hackathon for all aspiring student entrepreneurs in Hyderabad. Ideas can solve a real life problem, social issue or any other aspect from the given themes for  <a href="/blogs/events/hackathons/megathon" target="_blank">... [Read more]</a>
+    	<p>Hosted jointly by E-Cell IIT-Hyderabad and E-Cell IIIT-Hyderabad, Megathon is a 24-hour hackathon for all aspiring student entrepreneurs in Hyderabad. Ideas can solve a real life problem, social issue or any other aspect from the given themes for  <a href="/events/hackathons/megathon.html" target="_blank">... [Read more]</a>
       </p>
   	</div>
     <div class="col-md-4 col-sm-12 my-2 e-img-container">
@@ -1527,22 +1633,21 @@ This 2 day event will be packed with perspective building in <a href="/events/wo
     <div class="carousel-item active">
       <div class="card navy">
 
-        <div class="card-body speakers">
-          <div class="row speakers px-5">
-            <div class="col-sm-12 col-md-4 centhack navy">
-              <div class="s-image-container">
-                <img class="s-image" src="/assets/quotes/lamb.jpg" alt="cap1">
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-8">
-              <center>
-                <blockquote class="blockquote">
-                  <p>A year from now you will wish you had started today.</p>
-                  <p class="blockquote-footer"><cite title="Karen Lamb">Karen Lamb</cite></p>
-                </blockquote>
-              </center>
+        <div class="row card-body speakers">
+
+          <div class="col-md-5 col-sm-12 carousel-pic">
+            <div class="car-img-container">
+              <img class="car-img" src="/assets/quotes/s1.jpg" alt="Simon Sinek">
             </div>
           </div>
+
+          <div class="col-md-7 col-sm-12 carousel-text">
+            <blockquote class="blockquote">
+              <p>Dream big. Start small. But most of all, start.</p>
+              <p class="blockquote-footer"><cite title="Simon Sinek">Simon Sinek</cite></p>
+            </blockquote>
+          </div>
+
         </div>
 
       </div>
@@ -1551,22 +1656,21 @@ This 2 day event will be packed with perspective building in <a href="/events/wo
     <div class="carousel-item">
       <div class="card navy">
 
-        <div class="card-body speakers">
-          <div class="row speakers px-5">
-            <div class="col-sm-12 col-md-4 centhack">
-              <div class="s-image-container">
-                <img class="s-image" src="/assets/quotes/Simon_sinek.jpg" alt="By Startwithwhy - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15986453">
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-8">
-              <center>
-                <blockquote class="blockquote">
-                  <p>Dream big. Start small. But most of all, start.</p>
-                  <p class="blockquote-footer"><cite title="Simon Sinek">Simon Sinek</cite></p>
-                </blockquote>
-              </center>
+        <div class="row card-body speakers">
+
+          <div class="col-md-5 col-sm-12 carousel-pic p-2">
+            <div class="car-img-container">
+              <img class="car-img" src="/assets/quotes/l1.jpg" alt="Karen Lamb">
             </div>
           </div>
+
+          <div class="col-md-7 col-sm-12 carousel-text p-2">
+            <blockquote class="blockquote">
+              <p>A year from now you will wish you had started today.</p>
+              <p class="blockquote-footer"><cite title="Karen Lamb">Karen Lamb</cite></p>
+            </blockquote>
+          </div>
+
         </div>
 
       </div>
@@ -1574,22 +1678,21 @@ This 2 day event will be packed with perspective building in <a href="/events/wo
     <div class="carousel-item">
       <div class="card navy">
 
-        <div class="card-body speakers">
-          <div class="row speakers px-5">
-            <div class="col-sm-12 col-md-4 centhack">
-              <div class="s-image-container">
-                <img class="s-image" src="/assets/quotes/jobs.jpg" alt="cap3">
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-8">
-              <center>
-                <blockquote class="blockquote">
-                  <p>Innovation distinguishes between a leader and a follower.</p>
-                  <p class="blockquote-footer"><cite title="Steve Jobs">Steve Jobs</cite></p>
-                </blockquote>
-              </center>
+        <div class="row card-body speakers">
+
+          <div class="col-md-5 col-sm-12 carousel-pic">
+            <div class="car-img-container">
+              <img class="car-img" src="/assets/quotes/j1.jpg" alt="Steve Jobs">
             </div>
           </div>
+
+          <div class="col-md-7 col-sm-12 carousel-text">
+            <blockquote class="blockquote">
+              <p>Innovation distinguishes between a leader and a follower.</p>
+              <p class="blockquote-footer"><cite title="Steve Jobs">Steve Jobs</cite></p>
+            </blockquote>
+          </div>
+
         </div>
 
       </div>
@@ -1647,8 +1750,8 @@ This 2 day event will be packed with perspective building in <a href="/events/wo
           <div class = "col-sm-12 col-md-12">
             <input type="submit" class="btn btn-light formbut coral wide" value="Send">
           </div>
-            <input type="hidden" name="_cc" value="pulkit.gera@research.iiit.ac.in,zubairabid1999@gmail.com" />
-            <input type="hidden" name="_next" value="recieved"/>
+            <input type="hidden" name="_cc" value="ecell@iiit.ac.in" />
+            <input type="hidden" name="_next" value=""/>
         </div>
       </form>
     </div>
@@ -1701,6 +1804,10 @@ This 2 day event will be packed with perspective building in <a href="/events/wo
 				<a style="vertical-align:middle">
 					<li class="list-unstyled quick-links">
 						
+			        
+			      
+			        
+			      
 			        
 			      
 			        
@@ -1861,6 +1968,14 @@ This 2 day event will be packed with perspective building in <a href="/events/wo
 			      
 			        
 			      
+			        
+			      
+			        
+			      
+			        
+			      
+			        
+			      
 					</li>
 				</a>
 			</div>
@@ -1882,22 +1997,28 @@ This 2 day event will be packed with perspective building in <a href="/events/wo
 	function checkActiveNav()
 	{
 		var pagename = "Index";
+		console.log(pagename);
 		document.getElementById("contactus").classList.remove("active");
-		document.getElementById("blog").classList.remove("active");
+		document.getElementById("home").classList.remove("active");
 		if(pagename =="Index")
 		{
 			var pageUrl=window.location.pathname;
 			pageUrl += window.location.hash;
 			if(pageUrl == "/#contact")
+			{
 				document.getElementById("contactus").classList.add("active");
-			else if(pageUrl == "/#blog")
-				document.getElementById("blog").classList.add("active");
-
+				document.getElementById("home").classList.remove("active");
+			}
+			else if(pageUrl == "/")
+			{
+				document.getElementById("home").classList.add("active");
+				document.getElementById("contactus").classList.remove("active");
+			}
 		}
 		else
 		if(pagename=="The Crew")
 			document.getElementById("team").classList.add("active");
-		if(pagename =="About")
+		if(pagename =="About Us")
 			document.getElementById("about").classList.add("active");
 		else
 		if(pagename =="Blogs")
@@ -1906,16 +2027,16 @@ This 2 day event will be packed with perspective building in <a href="/events/wo
 		if(pagename =="Partners and Associates")
 			document.getElementById("partners").classList.add("active");
 	};
-	function gotoBlog()
+	function gotoHome()
 	{
-		window.location.hash="blog";
-		window.location.pathname="/"
+		window.location.hash="";
+		window.location.pathname="/";
 		checkActiveNav();
 	}
 	function gotoContact()
 	{
 		window.location.hash="contact";
-		window.location.pathname="/"
+		window.location.pathname="/";
 		checkActiveNav();
 	}
 	$(document).ready(checkActiveNav);

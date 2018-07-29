@@ -3,13 +3,21 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta charset="utf-8"> 
+	<meta charset="utf-8">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111097251-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-111097251-1');
+</script>
+
 	<!-- facebook Open Graph Metadatas -->
 <meta property="fb:app_id"       content="142981703176476" />
-<meta property="og:url" content="http://localhost:4000//blogs/" />
+<meta property="og:url" content="http://localhost:4000//blogs/index.html" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Blogs" />
-<meta property="og:description" content=" {% for post in paginator.posts %}	{% if post.categories contains "blogs" %}			            {{post.title}}		{{post.author}}		Posted on {{post.date|date_to_string}}		{{post.content|slice : 0,250}} ...[Read more]		    				{% endif %}	{% endfor %} {% if paginator.total_pages &gt; 1 %}      {% if pagi..." />
+<meta property="og:description" content=" {% for post in paginator.posts %}				            {{post.title}}		{{post.author}}		Posted on {{post.date|date_to_string}}		{{post.content|slice : 0,250}} ...[Read more]		    					{% endfor %} {% if paginator.total_pages &gt; 1 %}      {% if paginator.previous_page %}        Previous post    {% el..." />
 <meta property="og:image" content="http://localhost:4000/" />
 
 
@@ -39,6 +47,10 @@
   <nav class="navbar navbar-expand-md navbar-dark fixed-top navy py-0">
 
     <a class="navbar-brand" href="/">
+      
+        
+      
+        
       
         
       
@@ -200,6 +212,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -208,6 +228,9 @@
     <div class="collapse navbar-collapse pt-3" id="navbarCollapse">
 
       <ul class="navbar-nav ml-auto">
+        <li class="nav-item" id="home">
+          <a class="nav-link" onclick="gotoHome()">Home</a>
+        </li>
         <li class="nav-item" id="blog" >
           <a class="nav-link" href="/blogs/">Blog</a>
         </li>
@@ -215,7 +238,7 @@
           <a class="nav-link" href="/about/">About Us</a>
         </li>
         <li class="nav-item dropdown show">
-          <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Initiatives</a>
+          <a class="nav-link dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Initiatives</a>
 
           <div class="dropdown-menu navy" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item white-text" href="http://megathon.tech">Megathon</a>
@@ -282,21 +305,6 @@
  
 	
 	<div class ="col-md-6 sm-6">
-		<img class="img-fluid" src="images/elon.png" alt="The Story of Elon Musk - How the Man is Working on Changing the World. Literally.">
-    </div>
-    <div class ="col-md-6 sm-6">
-    <b><h1><a href = "/blogs/blogs/elon-musk.html" target ="_blank">The Story of Elon Musk - How the Man is Working on Changing the World. Literally.</a></h1></b>
-		<h5><i>Aditya Morolia</i></h5>
-		<h6>Posted on 28 May 2018</h6>
-		<p><p>Let’s talk about Iron Man. We all love him. A genius, eccentric, billionaire engineer, with a desire to change the world. But if you think such a person is possible only in comic books, you probably haven’t heard of Elon Musk. This article is a br ...<b><a href ="/blogs/blogs/elon-musk.html" target ="_blank">[Read more]</a></b></p>
-		<br>
-    <br>
-		<hr>
-	</div>
-	
-	
-	
-	<div class ="col-md-6 sm-6">
 		<img class="img-fluid" src="images/dropper.jpg" alt="To Dropout or To Not Dropout">
     </div>
     <div class ="col-md-6 sm-6">
@@ -311,30 +319,23 @@
 	
 	
 	
-	
-	
-	
+	<div class ="col-md-6 sm-6">
+		<img class="img-fluid" src="images/elon.png" alt="The Story of Elon Musk - How the Man is Working on Changing the World. Literally.">
+    </div>
+    <div class ="col-md-6 sm-6">
+    <b><h1><a href = "/blogs/blogs/elon-musk.html" target ="_blank">The Story of Elon Musk - How the Man is Working on Changing the World. Literally.</a></h1></b>
+		<h5><i>Aditya Morolia</i></h5>
+		<h6>Posted on 28 May 2018</h6>
+		<p><p>Let’s talk about Iron Man. We all love him. A genius, eccentric, billionaire engineer, with a desire to change the world. But if you think such a person is possible only in comic books, you probably haven’t heard of Elon Musk. This article is a br ...<b><a href ="/blogs/blogs/elon-musk.html" target ="_blank">[Read more]</a></b></p>
+		<br>
+    <br>
+		<hr>
+	</div>
 	
 	 
 
 </div>
 
- <div class="pagination row">
-  <div class="col-md-4 col-xs-4 col-sm-4">
-    
-    <h2><i class="fa fa-angle-left"></i></h2>Previous Page
-    
-  </div>
-  <div class="col-md-4 col-xs-4 col-sm-4">
-    <span class="page_number ">Page: 1</span>
-  </div>
-  <div class="col-md-4 col-xs-4 col-sm-4">
-    
-    <a href="/blogs/page2/"><h2><i class="fa fa-angle-right"></i></h2>Next Page</a>
-    
-  </div>
-</div>
- 
  
 
 </div>
@@ -384,6 +385,10 @@
 				<a style="vertical-align:middle">
 					<li class="list-unstyled quick-links">
 						
+			        
+			      
+			        
+			      
 			        
 			      
 			        
@@ -544,6 +549,14 @@
 			      
 			        
 			      
+			        
+			      
+			        
+			      
+			        
+			      
+			        
+			      
 					</li>
 				</a>
 			</div>
@@ -565,22 +578,28 @@
 	function checkActiveNav()
 	{
 		var pagename = "Blogs";
+		console.log(pagename);
 		document.getElementById("contactus").classList.remove("active");
-		document.getElementById("blog").classList.remove("active");
+		document.getElementById("home").classList.remove("active");
 		if(pagename =="Index")
 		{
 			var pageUrl=window.location.pathname;
 			pageUrl += window.location.hash;
 			if(pageUrl == "/#contact")
+			{
 				document.getElementById("contactus").classList.add("active");
-			else if(pageUrl == "/#blog")
-				document.getElementById("blog").classList.add("active");
-
+				document.getElementById("home").classList.remove("active");
+			}
+			else if(pageUrl == "/")
+			{
+				document.getElementById("home").classList.add("active");
+				document.getElementById("contactus").classList.remove("active");
+			}
 		}
 		else
 		if(pagename=="The Crew")
 			document.getElementById("team").classList.add("active");
-		if(pagename =="About")
+		if(pagename =="About Us")
 			document.getElementById("about").classList.add("active");
 		else
 		if(pagename =="Blogs")
@@ -589,16 +608,16 @@
 		if(pagename =="Partners and Associates")
 			document.getElementById("partners").classList.add("active");
 	};
-	function gotoBlog()
+	function gotoHome()
 	{
-		window.location.hash="blog";
-		window.location.pathname="/"
+		window.location.hash="";
+		window.location.pathname="/";
 		checkActiveNav();
 	}
 	function gotoContact()
 	{
 		window.location.hash="contact";
-		window.location.pathname="/"
+		window.location.pathname="/";
 		checkActiveNav();
 	}
 	$(document).ready(checkActiveNav);
