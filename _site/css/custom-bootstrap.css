@@ -626,6 +626,7 @@ pre {
   background-color: transparent !important;
   color: transparent !important;
 }
+
 /* end palette colours*/
 #banner {
   position: fixed;
@@ -633,11 +634,11 @@ pre {
   top: 4rem;
   width: 100%;
   padding: 0.5rem;
+  font-size: 1.5vw;
   /* height: 2rem; */
 
   transition: all 0.5s ease;
 
-  background-color: #e14658;
   color: white;
   text-align: center;
 }
