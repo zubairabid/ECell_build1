@@ -3,8 +3,10 @@ let nav = $('.navbar');
 let cov = $('.cover');
 let jump = $('#jump');
 let jumpicon = $('#jumpicon');
+let banner = $('#banner')
 
 let shiftY = cov.height() - nav.height();
+let shiftYbanner = cov.height() - nav.height()
 
 let scrollHandler = {
   allow: true,
@@ -19,9 +21,11 @@ function checkScroll() {
 
   if(win.scrollTop() > shiftY) {
     nav.removeClass('transparent');
+    banner.addClass('coral');
   }
   else {
     nav.addClass('transparent');
+    banner.removeClass("coral");
   }
 
   if(win.scrollTop() > shiftY/2) {

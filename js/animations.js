@@ -42,3 +42,6 @@ $(window).on('scroll', function() {
 });
 
 // END: Animating the "Reach and stats" section
+function kill() {
+	$('#banner').fadeOut();
+}
